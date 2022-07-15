@@ -153,12 +153,12 @@ const transporter = nodemailer.createTransport(
       })
       .then(result => {
         res.redirect('/login');
-        // return transporter.sendMail({
-        //   to: email,
-        //   from: 'alexzendersamuel33@gmail.com',
-        //   subject: 'Signup succeeded!',
-        //   html: '<h1>You successfully signed up!</h1>'
-        // });
+        return transporter.sendMail({
+          to: email,
+          from: 'alexzendersamuel33@gmail.com',
+          subject: 'Signup succeeded!',
+          html: '<h1>You successfully signed up!</h1>'
+        });
       })
       .catch(err => {
         const error = new Error(err);
