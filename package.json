@@ -1,0 +1,37 @@
+{
+  "name": "academind-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.3",
+    "connect-flash": "^0.1.1",
+    "connect-mongodb-session": "^3.1.1",
+    "csurf": "^1.11.0",
+    "ejs": "^2.6.1",
+    "express": "^4.18.1",
+    "express-handlebars": "^3.0.0",
+    "express-session": "^1.17.3",
+    "express-validator": "^6.14.2",
+    "mongodb": "^3.7.3",
+    "mongoose": "^6.4.0",
+    "multer": "^1.4.5-lts.1",
+    "mysql2": "^1.6.1",
+    "nodemailer": "^6.7.5",
+    "nodemailer-sendgrid-transport": "^0.2.0",
+    "nodemon": "^2.0.18",
+    "pdfkit": "^0.13.0",
+    "pug": "^2.0.3",
+    "random-hash": "^4.0.1",
+    "save": "^2.5.0",
+    "sequelize": "^5.0.0-beta.11",
+    "stripe": "^9.13.0",
+    "uuid": "^8.3.2"
+  }
+}
