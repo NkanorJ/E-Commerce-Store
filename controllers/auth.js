@@ -11,7 +11,7 @@ const transporter = nodemailer.createTransport(
   sendgridTransport({
     auth: {
       api_key:
-        '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'
+        //provide  sendgrid api here''
       }
     })
   );
@@ -155,7 +155,7 @@ const transporter = nodemailer.createTransport(
         res.redirect('/login');
         return transporter.sendMail({
           to: email,
-          from: 'alexzendersamuel33@gmail.com',
+          from:,  //provide sendgrid registered email address',
           subject: 'Signup succeeded!',
           html: '<h1>You successfully signed up!</h1>'
         });
@@ -209,7 +209,7 @@ const transporter = nodemailer.createTransport(
           res.redirect('/');
           transporter.sendMail({
             to: req.body.email,
-            from: 'alexzendersamuel33@gmail.com',
+            //from: //provide sendgrid email address '',
             subject: 'Password reset',
           html: `
             <p>You requested a password reset</p>
